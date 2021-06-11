@@ -72,7 +72,7 @@ def contact():
         message = request.form.get('message')
 
         msg = Message(
-            subject=f"Mail from {name}", body=f"Name: {name}\nE-Mail: {email}\nPhone: {phone}\n\n\n{message}", sender=mail_username, recipients=['yourpersonalemail@protonmail.com'])
+            subject=f"Mail from {name}", body=f"Name: {name}\nE-Mail: {email}\nPhone: {phone}\n\n\n{message}", sender=mail_username, recipients=['rahimaadnan2@gmail.com'])
         mail.send(msg)
         return render_template("contact.html", success=True)
 
